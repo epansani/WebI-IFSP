@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 5 - Tabela grande com colspan e rowspan e planos de fundo</title>
+</head>
+
+<body>
+    <h1>Praticando 5 - Tabela grande com colspan e rowspan e planos de fundo</h1>
+
+    <p>
+        <a href="../index.html">Voltar ao menu principal</a>
+    </p>      
+
+    <style>
+        /* Colocar BORDAS => border */
+        /* os 3 parâmetros são obrigatórios */
+        table,
+        td {
+            border: 1px solid red;
+        }
+
+        /* Mudar cor do TEXTO => color */
+        p{
+            color: red;
+        }
+
+
+        body{
+            background-color: lightblue;
+        }
+        
+        table,
+        td {
+            border: 1px solid red;
+        }
+
+        .legenda{
+            background-color: #fff;
+        }
+        .legenda td {
+            padding: 2px 10px;
+        }
+
+
+        .minha_table td {
+            padding: 30px 60px;
+            text-align: center;
+        }
+        .linha1{
+            background-color: green;
+        }
+        .linha2{
+            background-color: red;
+        }
+        .linha3{
+            background-color: blue;
+        }
+        .linha4{
+            background-color: yellow;
+        }
+    </style>
+
+    <table class="minha_table">
+        <caption>Tabela grande com colspan e rowspan</caption>
+        <tr class="linha1">
+            <td colspan="2">Colspan</td>
+            <td>-</td>
+            <td rowspan="3">Rowspan</td>
+        </tr>
+        <tr class="linha2">
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="linha3">
+            <td>-</td>
+            <td colspan="2">Colspan</td>
+        </tr>
+        <tr class="linha4">
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <p></p>
+
+    <table class="legenda">
+        <caption>Legenda</caption>
+        <tr>
+            <td>Linha 1</td>
+            <td class="linha1"> -------- </td>
+            <td>green</td>
+        </tr>
+        <tr>
+            <td>Linha 2</td>
+            <td class="linha2"> -------- </td>
+            <td>red</td>
+        </tr>
+        <tr>
+            <td>Linha 3</td>
+            <td class="linha3"> -------- </td>
+            <td>blue</td>
+        </tr>
+        <tr>
+            <td>Linha 4</td>
+            <td class="linha4"> -------- </td>
+            <td>yellow</td>
+        </tr>
+    </table>
+
+    <style>
+        
+    </style>
+
+</body>
+
+</html>
